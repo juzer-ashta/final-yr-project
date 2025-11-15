@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper';
+import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 function Hero() {
   const cards = [
