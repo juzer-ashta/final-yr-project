@@ -19,7 +19,7 @@ function Hero() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      {/* Swiper Section */}
+  
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={3}
@@ -55,7 +55,7 @@ function Hero() {
         ))}
       </Swiper>
 
-      {/* Hero Content */}
+    
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20">
         <div className="bg-black bg-opacity-10 backdrop-blur-[2px] p-8 rounded-lg shadow-lg">
           <h1 className="text-5xl font-extrabold mb-6">
@@ -73,7 +73,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* Bottom Gradient for Style */}
+    
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
     </div>
   );

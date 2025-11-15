@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    {/* <h1>divya</h1> */}
+    {}
       <Hero/>
     </>
   )
