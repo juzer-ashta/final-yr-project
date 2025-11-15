@@ -1,27 +1,30 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { Link } from 'react-router-dom';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
+
 import 'swiper/css';
-import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css/effect-fade';
 
 function Hero() {
   const cards = [
-    { title: 'Adventure Awaits', description: 'Discover new destinations.', image: '/public/image4.jpg' },
-    { title: 'Plan Your Trip', description: 'Tailored itineraries for you.', image: '/public/image2.jpg' },
-    { title: 'Explore the World', description: 'Unforgettable experiences.', image: '/public/image5.jpg' },
-    { title: 'Luxury Travel', description: 'Experience comfort.', image: '/public/image6.jpg' },
-    { title: 'Cultural Tours', description: 'Dive into history.', image: '/public/image3.jpg' },
+    { title: 'Adventure Awaits', description: 'Discover new destinations.', image: '/image4.jpg' },
+    { title: 'Plan Your Trip', description: 'Tailored itineraries for you.', image: '/image2.jpg' },
+    { title: 'Explore the World', description: 'Unforgettable experiences.', image: '/image5.jpg' },
+    { title: 'Luxury Travel', description: 'Experience comfort.', image: '/image6.jpg' },
+    { title: 'Cultural Tours', description: 'Dive into history.', image: '/image3.jpg' },
   ];
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-  
+
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+        effect="fade"
         slidesPerView={3}
         spaceBetween={20}
         loop={true}
@@ -55,7 +58,6 @@ function Hero() {
         ))}
       </Swiper>
 
-    
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20">
         <div className="bg-black bg-opacity-10 backdrop-blur-[2px] p-8 rounded-lg shadow-lg">
           <h1 className="text-5xl font-extrabold mb-6">
@@ -73,7 +75,6 @@ function Hero() {
         </div>
       </div>
 
-    
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
     </div>
   );
