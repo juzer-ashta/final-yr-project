@@ -7,7 +7,7 @@ import { chatSession } from '@/service/AImodel';
 import { useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios'
 import { doc, setDoc } from "firebase/firestore";
-import { db } from '@/service/FirebaseConfig'
+import { db } from '@/service/firebaseConfig'
 import { useNavigate, useNavigation } from 'react-router-dom';
 import { toast } from 'sonner'
 import {
