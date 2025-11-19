@@ -230,9 +230,14 @@ const LogIn=useGoogleLogin({
 
       <Dialog open={openDialog}>
         <DialogContent>
+              <DialogClose className="absolute right-4 top-4">
+      <Link to="/">
+  <Button>Go to Page</Button>
+</Link>
+    </DialogClose>
           <DialogHeader>
             <DialogDescription>
-              <img src="/logo.svg" alt="" />
+              <img src="/logo2.svg" alt="" />
               <h2 className='font-bold text-lg mt-7 text-black'>Sign In With Google</h2>
               <p>Sign in to the app with Google authentication security</p>
               <Button onClick={LogIn}
