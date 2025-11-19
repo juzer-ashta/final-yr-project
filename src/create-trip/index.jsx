@@ -231,12 +231,6 @@ const LogIn=useGoogleLogin({
 
         <Dialog open={openDialog} onOpenChange={setOpenDialog}>
   <DialogContent>
-    
-    {/* Close Button */}
-    <DialogClose className="absolute right-4 top-4">
-      <button>✕</button>
-    </DialogClose>
-
     <DialogHeader>
       <DialogDescription>
         <img src="/logo-new2.svg" alt="" />
@@ -252,7 +246,7 @@ const LogIn=useGoogleLogin({
 
         {/* Your link button */}
         <Link to="/">
-          <Button className="w-full mt-4">Go to Page</Button>
+          <Button className="w-full mt-4 text-underline">Go to Page</Button>
         </Link>
 
       </DialogDescription>

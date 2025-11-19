@@ -87,6 +87,10 @@ function Header() {
               <p>Sign in to the app with Google authentication security</p>
               <Button onClick={login}
                 className='w-full mt-5 flex gap-4 items-center'>Sign In With Google </Button>
+
+                 <Link to="/">
+                          <Button className="w-full mt-4 text-underline">Go to Page</Button>
+                        </Link>
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
