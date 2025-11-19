@@ -16,7 +16,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import axios from 'axios'
-import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -88,9 +87,6 @@ function Header() {
               <Button onClick={login}
                 className='w-full mt-5 flex gap-4 items-center'>Sign In With Google </Button>
 
-                 <Link to="/">
-                          <Button className="w-full mt-4 text-underline">Go to Page</Button>
-                        </Link>
             </DialogDescription>
           </DialogHeader>
         </DialogContent>

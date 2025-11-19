@@ -246,7 +246,7 @@ const LogIn=useGoogleLogin({
 
         {/* Your link button */}
         <Link to="/">
-          <Button className="w-full mt-4 text-underline">Go to Page</Button>
+          <Button className="w-full mt-4">Go to Page</Button>
         </Link>
 
       </DialogDescription>
