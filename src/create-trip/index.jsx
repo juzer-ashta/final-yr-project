@@ -229,27 +229,39 @@ const LogIn=useGoogleLogin({
         </div>
       </div>
 
-      <Dialog open={openDialog}>
-        <DialogContent>
-              <DialogClose className="absolute right-4 top-4">
-      <Link to="/">
-  <Button>Go to Page</Button>
-</Link>
+        <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+  <DialogContent>
+    
+    {/* Close Button */}
+    <DialogClose className="absolute right-4 top-4">
+      <button>✕</button>
     </DialogClose>
-          <DialogHeader>
-            <DialogDescription>
-              <img src="/logo2.svg" alt="" />
-              <h2 className='font-bold text-lg mt-7 text-black'>Sign In With Google</h2>
-              <p>Sign in to the app with Google authentication security</p>
-              <Button onClick={LogIn}
-                className='w-full mt-5 flex gap-4 items-center'>Sign In With Google </Button>
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
 
-    </div>
-  );
-}
+    <DialogHeader>
+      <DialogDescription>
+        <img src="/logo-new2.svg" alt="" />
+        <h2 className="font-bold text-lg mt-7 text-black">Sign In With Google</h2>
+        <p>Sign in to the app with Google authentication security</p>
+
+        <Button
+          onClick={LogIn}
+          className="w-full mt-5 flex gap-4 items-center"
+        >
+          Sign In With Google
+        </Button>
+
+        {/* Your link button */}
+        <Link to="/">
+          <Button className="w-full mt-4">Go to Page</Button>
+        </Link>
+
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+
+      </div>
+    );
+  }
 
 export default Createtrip;
